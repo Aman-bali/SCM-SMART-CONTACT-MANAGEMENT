@@ -12,8 +12,6 @@ This folder contains the six required assignment deliverables plus this README.
 ## Important accuracy note
 The uploaded project describes a microservice architecture with a Node/Express API Gateway and Java/Spring Boot services. The source also contains inconsistencies: gateway code implements some API paths directly, the media service uses process-local in-memory storage, the notification service stores a process-local dispatch log, and the audit repository currently uses in-memory maps despite MongoDB configuration. The diagrams and SQL are an **assignment benchmark / target-state design**. Proposed persistence is labeled as such in the PDF. The SQL intentionally avoids cross-service foreign keys for user IDs; services should resolve those references through contracts. Audit data is modeled as MongoDB collections and therefore is not represented as SQL CREATE TABLE statements.
 
-## Team member placeholders
-Replace `[Team Member 1]` etc. in the diagram and `design.pdf` with the actual names of your group members.
 
 ## Git commit
 From the root of your SCM repository, copy this folder's contents into a directory such as `assignment-2-submission/`, then run:
